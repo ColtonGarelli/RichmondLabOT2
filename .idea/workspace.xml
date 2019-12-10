@@ -111,7 +111,7 @@
       <workItem from="1575994133039" duration="98000" />
       <workItem from="1575994341113" duration="82000" />
       <workItem from="1575994438560" duration="5322000" />
-      <workItem from="1576010136782" duration="2996000" />
+      <workItem from="1576010136782" duration="3482000" />
     </task>
     <task id="LOCAL-00001" summary="committing again">
       <created>1576015654101</created>
@@ -162,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576016875185</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="committing again again">
+      <created>1576017226919</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1576017226919</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
@@ -194,14 +201,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="committing again again" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="320" y="107" key="#Notifications" timestamp="1576016484312">
+    <state x="320" y="107" key="#Notifications" timestamp="1576017249152">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="107" key="#Notifications/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1576016484312" />
-    <state x="314" y="44" width="812" height="523" key="CommitChangelistDialog2" timestamp="1576016875094">
+    <state x="320" y="107" key="#Notifications/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1576017249152" />
+    <state x="314" y="44" width="812" height="523" key="CommitChangelistDialog2" timestamp="1576017226829">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="314" y="44" width="812" height="523" key="CommitChangelistDialog2/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1576016875094" />
+    <state x="314" y="44" width="812" height="523" key="CommitChangelistDialog2/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1576017226829" />
     <state x="144" y="80" key="DiffContextDialog" timestamp="1576015975065">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -210,10 +217,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="397" y="68" key="SettingsEditor/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1576017132070" />
-    <state x="320" y="181" key="Vcs.Push.Dialog.v2" timestamp="1576016877040">
+    <state x="320" y="181" key="Vcs.Push.Dialog.v2" timestamp="1576017456034">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="181" key="Vcs.Push.Dialog.v2/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1576016877040" />
+    <state x="320" y="181" key="Vcs.Push.Dialog.v2/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1576017456034" />
     <state x="376" y="296" key="com.intellij.ide.util.TipDialog" timestamp="1575995165027">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
