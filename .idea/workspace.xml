@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bde60989-0194-438a-ad6c-e677778040ed" name="Default Changelist" comment="committing again">
+    <list default="true" id="bde60989-0194-438a-ad6c-e677778040ed" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +55,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -108,7 +108,7 @@
       <workItem from="1575994133039" duration="98000" />
       <workItem from="1575994341113" duration="82000" />
       <workItem from="1575994438560" duration="5322000" />
-      <workItem from="1576010136782" duration="1859000" />
+      <workItem from="1576010136782" duration="2288000" />
     </task>
     <task id="LOCAL-00001" summary="committing again">
       <created>1576015654101</created>
@@ -124,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576015689787</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="committing again">
+      <created>1576015981559</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1576015981559</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -148,18 +155,18 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="320" y="107" key="#Notifications/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1576015943223" />
-    <state x="314" y="44" key="CommitChangelistDialog2" timestamp="1576015707782">
+    <state x="314" y="44" width="812" height="523" key="CommitChangelistDialog2" timestamp="1576015981463">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="314" y="44" key="CommitChangelistDialog2/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1576015707782" />
-    <state x="144" y="80" key="DiffContextDialog" timestamp="1576015704008">
+    <state x="314" y="44" width="812" height="523" key="CommitChangelistDialog2/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1576015981463" />
+    <state x="144" y="80" key="DiffContextDialog" timestamp="1576015975065">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="144" y="80" key="DiffContextDialog/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1576015704008" />
-    <state x="397" y="68" key="SettingsEditor" timestamp="1576015952811">
+    <state x="144" y="80" key="DiffContextDialog/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1576015975065" />
+    <state x="397" y="68" key="SettingsEditor" timestamp="1576016418560">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="397" y="68" key="SettingsEditor/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1576015952811" />
+    <state x="397" y="68" key="SettingsEditor/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1576016418560" />
     <state x="320" y="181" key="Vcs.Push.Dialog.v2" timestamp="1576015659949">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
