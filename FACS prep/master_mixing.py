@@ -12,10 +12,11 @@ def setup(protocol: protocol_api.ProtocolContext):
     p300m = protocol.load_instrument('p300_multi', 'left', tip_racks=[tiprack300_1])
 
 
-def calc_volumes(num_ab: int, num_samples: int):
+def calc_volumes(num_ab: int, num_samples: int, ab_vol: float or [float], vol_per_test):
+
     # assumes 1:200 (.5uL/test)
     tot_ab = (num_ab * 0.5)
-    tot_facs = (num_samples * 100) - tot_ab
+    tot_facs = (num_samples * 100) - (tot_ab)
     # TODO: calculate volume of ab and FACS buffer to add for MM
     pass
 

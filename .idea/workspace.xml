@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bde60989-0194-438a-ad6c-e677778040ed" name="Default Changelist" comment="">
+    <list default="true" id="bde60989-0194-438a-ad6c-e677778040ed" name="Default Changelist" comment="committing again again">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FACS prep/master_mixing.py" beforeDir="false" afterPath="$PROJECT_DIR$/FACS prep/master_mixing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/notes.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/notes.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/~$notes.docx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +115,9 @@
       <workItem from="1575994133039" duration="98000" />
       <workItem from="1575994341113" duration="82000" />
       <workItem from="1575994438560" duration="5322000" />
-      <workItem from="1576010136782" duration="3482000" />
+      <workItem from="1576010136782" duration="3836000" />
+      <workItem from="1576018246300" duration="472000" />
+      <workItem from="1576098438588" duration="2687000" />
     </task>
     <task id="LOCAL-00001" summary="committing again">
       <created>1576015654101</created>
@@ -189,7 +195,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -205,26 +213,27 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="320" y="107" key="#Notifications/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1576017249152" />
-    <state x="314" y="44" width="812" height="523" key="CommitChangelistDialog2" timestamp="1576017226829">
+    <state x="314" y="44" width="812" height="795" key="CommitChangelistDialog2" timestamp="1576018223759">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="314" y="44" width="812" height="523" key="CommitChangelistDialog2/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1576017226829" />
+    <state x="314" y="44" width="812" height="795" key="CommitChangelistDialog2/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1576018223759" />
     <state x="144" y="80" key="DiffContextDialog" timestamp="1576015975065">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="144" y="80" key="DiffContextDialog/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1576015975065" />
-    <state x="397" y="68" key="SettingsEditor" timestamp="1576017132070">
+    <state x="397" y="68" key="SettingsEditor" timestamp="1576018284569">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="397" y="68" key="SettingsEditor/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1576017132070" />
+    <state x="397" y="68" key="SettingsEditor/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1576018284569" />
     <state x="320" y="181" key="Vcs.Push.Dialog.v2" timestamp="1576017456034">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="320" y="181" key="Vcs.Push.Dialog.v2/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1576017456034" />
-    <state x="376" y="296" key="com.intellij.ide.util.TipDialog" timestamp="1575995165027">
+    <state x="376" y="296" key="com.intellij.ide.util.TipDialog" timestamp="1576098439711">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="376" y="296" key="com.intellij.ide.util.TipDialog/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1575995165027" />
+    <state x="376" y="296" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1576098439711" />
+    <state x="376" y="296" key="com.intellij.ide.util.TipDialog/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1576018247892" />
     <state x="512" y="313" key="git4idea.rebase.GitRebaseDialog" timestamp="1576015742867">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
