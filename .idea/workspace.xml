@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bde60989-0194-438a-ad6c-e677778040ed" name="Default Changelist" comment="committing again again">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ELISAs/wash_elisa.py" beforeDir="false" afterPath="$PROJECT_DIR$/ELISAs/wash_elisa.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FACS prep/master_mixing.py" beforeDir="false" afterPath="$PROJECT_DIR$/FACS/master_mixing.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +127,7 @@
       <workItem from="1576108587938" duration="1372000" />
       <workItem from="1576162919160" duration="4648000" />
       <workItem from="1576172127672" duration="698000" />
-      <workItem from="1576184339395" duration="170000" />
+      <workItem from="1576184339395" duration="623000" />
     </task>
     <task id="LOCAL-00002" summary="committing again">
       <created>1576015689787</created>
