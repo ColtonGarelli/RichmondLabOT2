@@ -1,15 +1,16 @@
 from opentrons import protocol_api
 from opentrons.protocol_api.contexts import Labware, InstrumentContext
-import opentrons
+
 metadata = {'apiLevel': '2.0'}
+
 
 def setup_wash(protocol: protocol_api.ProtocolContext):
     plate = protocol.load_labware('corning_96_wellplate_360ul_flat', '11')
     tiprack300_1 = protocol.load_labware('opentrons_96_tiprack_300ul', '10')
     reservoir = [protocol.load_labware('nest_12_reservoir_15ml', '9'),
                  protocol.load_labware('nest_12_reservoir_15ml', '3')]
-    p300 = protocol.load_instrument('p300_multi', 'left', tip_racks=[tiprack300_1])
-    return p300, reservoir, plate
+    p300m = protocol.load_instrument('p300_multi', 'left', tip_racks=[tiprack300_1])
+    return p300m, reservoir, plate
 
 
 # TODO: account for not full tip boxes
@@ -44,14 +45,10 @@ def elisa_wash(protocol: protocol_api.ProtocolContext,
     # TODO: adjust num presses and increment
     p300m.pick_up_tip(p300m.tip_racks[0].well('A1'), presses=2, increment=.05)
     for i1 in range(num_washes):
-        # Establish a source well. well_counter should increment before well runs out of liquid
-        src = reservoir[0].columns()[well_counter]
         # reset aspiration height
         p300m.well_bottom_clearance.aspirate = 1
         index = 0
         # TODO: add disposal volume?
-
-
         """
         ~~~~~~~~~~~~~~~~~~
         Handle adding wash to plate. Calculate max number of dispenses per source load.
@@ -60,6 +57,9 @@ def elisa_wash(protocol: protocol_api.ProtocolContext,
         ~~~~~~~~~~~~~~~~~~
         """
         for i2 in range(int(12/(dispenses_per_load))):
+            # Establish a source well. well_counter should increment before well runs out of liquid
+            # src must be established within this loop
+            src = reservoir[0].columns()[well_counter]
             wells = plate.rows()[0][index: index+dispenses_per_load]
             # TODO: figure out volume count problem...works but not soon enough. well_counter iterates after two washes
             # TODO: maybe tips don't go down to bottom of well and that's why?

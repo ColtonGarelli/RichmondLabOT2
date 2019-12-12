@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="bde60989-0194-438a-ad6c-e677778040ed" name="Default Changelist" comment="committing again again">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FACS prep/master_mixing.py" beforeDir="false" afterPath="$PROJECT_DIR$/FACS prep/master_mixing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/notes.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/notes.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/~$notes.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ELISAs/wash_elisa.py" beforeDir="false" afterPath="$PROJECT_DIR$/ELISAs/wash_elisa.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FACS prep/master_mixing.py" beforeDir="false" afterPath="$PROJECT_DIR$/FACS/master_mixing.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +60,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="tasks.servers" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -95,12 +93,13 @@
     <configuration>$USER_HOME$/.subversion</configuration>
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="bde60989-0194-438a-ad6c-e677778040ed" name="Default Changelist" comment="" />
+    <task id="Default" summary="Default task">
+      <branch name="origin/master" repository="$PROJECT_DIR$" />
+      <changelist id="bde60989-0194-438a-ad6c-e677778040ed" name="Default Changelist" comment="committing again again" />
       <created>1573766716113</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1573766716113</updated>
+      <updated>1576102837522</updated>
       <workItem from="1573766717926" duration="1735000" />
       <workItem from="1574186493718" duration="13107000" />
       <workItem from="1574261494573" duration="12748000" />
@@ -117,14 +116,20 @@
       <workItem from="1575994438560" duration="5322000" />
       <workItem from="1576010136782" duration="3836000" />
       <workItem from="1576018246300" duration="472000" />
-      <workItem from="1576098438588" duration="2687000" />
+      <workItem from="1576098438588" duration="4176000" />
     </task>
-    <task id="LOCAL-00001" summary="committing again">
+    <task active="true" id="LOCAL-00001" summary="committing again">
+      <changelist id="bde60989-0194-438a-ad6c-e677778040ed" name="Default Changelist" comment="committing again again" />
       <created>1576015654101</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1576015654101</updated>
+      <updated>1576102837522</updated>
+      <workItem from="1576102837872" duration="1573000" />
+      <workItem from="1576108587938" duration="1372000" />
+      <workItem from="1576162919160" duration="4648000" />
+      <workItem from="1576172127672" duration="698000" />
+      <workItem from="1576184339395" duration="170000" />
     </task>
     <task id="LOCAL-00002" summary="committing again">
       <created>1576015689787</created>
@@ -176,16 +181,19 @@
       <updated>1576017226919</updated>
     </task>
     <option name="localTasksCounter" value="9" />
-    <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <servers>
+      <Trello>
+        <option name="currentBoard">
+          <TrelloBoard id="5ddeeb05ff13982413d0ede8" name="Hugo" />
+        </option>
+        <option name="currentList">
+          <TrelloList />
+        </option>
+        <option name="currentUser">
+          <TrelloUser id="5d7bdc1c25822036e1e67a72" name="coltongarelli" />
+        </option>
+      </Trello>
+    </servers>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -221,19 +229,20 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="144" y="80" key="DiffContextDialog/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1576015975065" />
-    <state x="397" y="68" key="SettingsEditor" timestamp="1576018284569">
+    <state x="397" y="68" key="SettingsEditor" timestamp="1576102710242">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="397" y="68" key="SettingsEditor/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1576018284569" />
+    <state x="397" y="68" key="SettingsEditor/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1576102710242" />
     <state x="320" y="181" key="Vcs.Push.Dialog.v2" timestamp="1576017456034">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="320" y="181" key="Vcs.Push.Dialog.v2/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1576017456034" />
-    <state x="376" y="296" key="com.intellij.ide.util.TipDialog" timestamp="1576098439711">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="1941" y="352" key="com.intellij.ide.util.TipDialog" timestamp="1576184340408">
+      <screen x="1440" y="23" width="1920" height="1057" />
     </state>
     <state x="376" y="296" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1576098439711" />
-    <state x="376" y="296" key="com.intellij.ide.util.TipDialog/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1576018247892" />
+    <state x="376" y="296" key="com.intellij.ide.util.TipDialog/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1576108587866" />
+    <state x="1941" y="352" key="com.intellij.ide.util.TipDialog/1440.23.1920.1057/0.23.1440.877@1440.23.1920.1057" timestamp="1576184340408" />
     <state x="512" y="313" key="git4idea.rebase.GitRebaseDialog" timestamp="1576015742867">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
