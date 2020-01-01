@@ -4,7 +4,7 @@
 
 We'll be posting code here for our purposes, and yours!
 
-Our goal is to write straightforward, reusable, and time efficient code. Suggestions and constructive criticism are welcome.
+Our goal is to write straightforward, reusable, and time efficient code. Suggestions and constructive criticism are welcome!
  
 Our docs can be found [here]()
 

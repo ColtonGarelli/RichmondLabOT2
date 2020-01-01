@@ -25,6 +25,29 @@ def load_plate(protocol: ProtocolContext,
         plate_well_count += 2
         p50s.drop_tip()
 
+def load_weird_plate(protocol: ProtocolContext,
+               p50s: InstrumentContext,
+               tuberack: Labware,
+               plate):
+    tube_well_count = 0
+    plate_well_count = 0
+    p50s.well_bottom_clearance.aspirate = .01
+    for tube in range(4):
+        p50s.pick_up_tip()
+        p50s.distribute(volume=19, source=tuberack.wells()[tube],
+                        dest=plate.rows()[plate_well_count: plate_well_count+2],
+                        new_tip='never',)
+        plate_well_count += 2
+        p50s.drop_tip()
+    plate_well_count = 7
+    for tube in range(2):
+        p50s.pick_up_tip()
+        p50s.distribute(volume=19, source=tuberack.columns()[1][tube],
+                        dest=plate.columns()[plate_well_count: plate_well_count+2][:],
+                        new_tip='never',)
+        plate_well_count += 2
+        p50s.drop_tip()
+
 
 def run(protocol: ProtocolContext):
-    load_plate(protocol, *setup(protocol=protocol))
+    load_weird_plate(protocol, *setup(protocol=protocol))

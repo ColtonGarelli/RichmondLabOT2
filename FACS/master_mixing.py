@@ -1,6 +1,8 @@
 from opentrons import protocol_api
 from opentrons.protocol_api.contexts import Labware, InstrumentContext
 
+metadata = {'apiLevel': '2.0'}
+
 
 def setup(protocol: protocol_api.ProtocolContext):
     # TODO: figure out how to run with incomplete plates
