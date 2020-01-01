@@ -130,7 +130,7 @@ dmypy.json
 
 # More jetbrains
 .idea
-workspace.xml
+.idea/workspace.xml
 tasks.xml
 
 
