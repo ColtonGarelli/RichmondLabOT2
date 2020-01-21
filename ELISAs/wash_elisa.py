@@ -5,9 +5,11 @@ metadata = {'apiLevel': '2.0'}
 
 
 def setup_wash(protocol: protocol_api.ProtocolContext):
-    plate = protocol.load_labware('corning_96_wellplate_360ul_flat', '11')
+    plate = protocol.load_labware('corning_96_wellplate_360ul_flat', '7')
     tiprack300_1 = protocol.load_labware('opentrons_96_tiprack_300ul', '10')
-    reservoir = [protocol.load_labware('nest_12_reservoir_15ml', '9'),
+    # tiprack300_2 = protocol.load_labware('opentrons_96_tiprack_300ul', '10')
+
+    reservoir = [protocol.load_labware("usascientific_12_reservoir_22ml", '8'),
                  protocol.load_labware('nest_12_reservoir_15ml', '3')]
     p300m = protocol.load_instrument('p300_multi', 'left', tip_racks=[tiprack300_1])
     return p300m, reservoir, plate
@@ -46,7 +48,7 @@ def elisa_wash(protocol: protocol_api.ProtocolContext,
     p300m.pick_up_tip(p300m.tip_racks[0].well('A1'), presses=2, increment=.05)
     for i1 in range(num_washes):
         # reset aspiration height
-        p300m.well_bottom_clearance.aspirate = 1
+
         index = 0
         # TODO: add disposal volume?
         """
@@ -59,39 +61,42 @@ def elisa_wash(protocol: protocol_api.ProtocolContext,
         for i2 in range(int(12/(dispenses_per_load))):
             # Establish a source well. well_counter should increment before well runs out of liquid
             # src must be established within this loop
+            if vol_counter >= 9.7:
+                # If most of the volume from the trough is gone, move to next well and reset volume count
+                well_counter += 1
+                vol_counter = 0
             src = reservoir[0].columns()[well_counter]
             wells = plate.rows()[0][index: index+dispenses_per_load]
             # TODO: figure out volume count problem...works but not soon enough. well_counter iterates after two washes
             # TODO: maybe tips don't go down to bottom of well and that's why?
+            p300m.well_bottom_clearance.aspirate = 5
+            p300m.well_bottom_clearance.dispense = 10
             p300m.distribute(volume=wash_volume, source=src, dest=wells,
                              new_tip='never', disposal_volume=0, blow_out=True)
             # Increment index by number of dispenses per aspiration
             index += dispenses_per_load
             # Count volume consumed from current trough well
-            vol_counter += (.3 * 8)
-            if vol_counter >= 9.7:
-                # If most of the volume from the trough is gone, move to next well and reset volume count
-                well_counter += 1
-                vol_counter = 0
+            vol_counter += (.3 * 4)
+
             # Tried distribute and keep getting tip already attached or tip not attached error
         """
         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         Mix and dispense most of the liquid into the trash. Manual flicking still necessary.
         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         """
-        # Set clearance for tip for aspiration
-        p300m.well_bottom_clearance.aspirate = 0.1
-        # Mix and transfer volume from plate to trash.
-        p300m.transfer(volume=wash_volume, source=plate.rows()[0],
-                       dest=p300m.trash_container.wells(0), disposal_volume=100,
-                       new_tip='never', mix_before=(2, 80), aspirate_speed=5, dispense_speed=12,
-                       )
+        # protocol.delay(seconds=30)
+        # # Set clearance for tip for aspiration
+        # p300m.well_bottom_clearance.aspirate = 0.1
+        # # Mix and transfer volume from plate to trash.
+        # p300m.transfer(volume=wash_volume, source=plate.rows()[0],
+        #                dest=p300m.trash_container.wells(0), disposal_volume=wash_volume,
+        #                new_tip='never',) #mix_before=(2, (wash_volume*.75)), aspirate_speed=5, dispense_speed=12,
+
         p300m.home()
         protocol.pause(msg="{} washes done! Resume washing by clicking the 'Resume' button!".format(i1+1))
     protocol.comment("{} washes complete! You may proceed with your protocol.".format(num_washes))
     p300m.return_tip()
     p300m.home()
-
 
 
 def load_antibodies():
@@ -110,6 +115,6 @@ def load_antibodies():
 
 def run(protocol: protocol_api.ProtocolContext):
 
-    elisa_wash(protocol, *setup_wash(protocol), num_washes=3, wash_volume=100)
+    elisa_wash(protocol, *setup_wash(protocol), num_washes=5, wash_volume=150)
 
 

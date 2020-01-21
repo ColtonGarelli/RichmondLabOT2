@@ -3,10 +3,13 @@ from opentrons.protocol_api.contexts import Labware, InstrumentContext
 
 metadata = {'apiLevel': '2.0'}
 
+# 100, 125, 200, 250, 500uL antibody tubes
+# only have specs for 2ml 1.5ml and 500uL
 
 def setup(protocol: protocol_api.ProtocolContext):
     # TODO: figure out how to run with incomplete plates
     plates = protocol.load_labware('corning_96_wellplate_360ul_flat', '11')
+    # tubes = protocol.load_labware()
     # Should probably instantiate 3 racks
     tiprack300_1 = protocol.load_labware('opentrons_96_tiprack_300ul', '10')
     reservoir = [protocol.load_labware('nest_12_reservoir_15ml', '9'),
