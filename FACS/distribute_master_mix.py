@@ -1,6 +1,7 @@
 from opentrons import protocol_api
 from opentrons.protocol_api.contexts import Labware, InstrumentContext, ProtocolContext
 import csv, typing
+from opentrons.drivers.rpi_drivers import gpio
 metadata = {'apiLevel': '2.0'}
 
 
@@ -36,7 +37,7 @@ def setup_50(protocol: protocol_api.ProtocolContext):
     # FACS buffer
     facs = protocol.load_labware('nest_12_reservoir_15ml', '9')
     # facs = protocol.load_labware("usascientific_12_reservoir_22ml", 4)
-    p50s = protocol.load_instrument('p50_single', 'right', tip_racks=tipracks_300)
+    p50s = protocol.load_instrument('p50_single', 'left', tip_racks=tipracks_300)
 
     tuberack = protocol.load_labware('opentrons_24_tuberack_eppendorf_1.5ml_safelock_snapcap', '7')
     return p50s, plates, tuberack, tipracks_300, facs
@@ -79,7 +80,7 @@ def distribute_master_mix_p50(p50s: InstrumentContext, plates: [Labware],
 
 def distribute_mm_to_map(p50s: InstrumentContext, plates: [Labware],
                          tuberack: Labware, tipracks: [Labware], facs: Labware,
-                         groups: typing.Generator, platemap: list):
+                         groups: typing.Generator, platemap: list, protocol: protocol_api.ProtocolContext):
 
     tubes = tuberack.wells()[:3]
     plate = plates[0]
@@ -102,6 +103,10 @@ def distribute_mm_to_map(p50s: InstrumentContext, plates: [Labware],
             map_row_counter += 1
         p50s.drop_tip()
 
+
+def button_pause(protocol: protocol_api.ProtocolContext):
+    if gpio.read(gpio.INPUT_PINS['BUTTON_INPUT']):
+        protocol.reset()
 
 
 def distribute_master_mix(p300m: InstrumentContext, plates: [Labware],
@@ -175,11 +180,11 @@ def load_platemap(file_path):
     return wells
 
 
-def run(protocool:ProtocolContext):
-    p50s, plates, tuberack, tiprack300_1, facs = setup_50(protocool)
+def run(protocol:ProtocolContext):
+    p50s, plates, tuberack, tiprack300_1, facs = setup_50(protocol)
     platemap = load_platemap('/data/platemaps/FACS/test.csv')
     # platemap = load_platemap('/Users/coltongarelli/PycharmProjects/PlateMapper/test.csv')
     groups = get_groups(platemap)
 
     distribute_mm_to_map(p50s=p50s, plates=plates, tuberack=tuberack, tipracks=tiprack300_1,
-                         facs=facs, platemap=platemap, groups=groups)
+                         facs=facs, platemap=platemap, groups=groups, protocol=protocol)

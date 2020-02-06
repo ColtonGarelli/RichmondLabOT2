@@ -3,13 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="bde60989-0194-438a-ad6c-e677778040ed" name="Default Changelist" comment="committing again again">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ELISAs/wash_elisa.py" beforeDir="false" afterPath="$PROJECT_DIR$/ELISAs/wash_elisa.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ELISAs/blow_out.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ELISAs/test.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/FACS/distribute_master_mix.py" beforeDir="false" afterPath="$PROJECT_DIR$/FACS/distribute_master_mix.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FACS/master_mixing.py" beforeDir="false" afterPath="$PROJECT_DIR$/FACS/master_mixing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blow_out.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/materials.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/namechange.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/qt_platemapper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FACS/test.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/example.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/example2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/load_plate_generic.py" beforeDir="false" afterPath="$PROJECT_DIR$/load_plate_generic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/load_platemap.py" beforeDir="false" afterPath="$PROJECT_DIR$/load_platemap.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,12 +41,14 @@
         <option value="Python Stub" />
         <option value="Jupyter Notebook" />
         <option value="Python Script" />
+        <option value="Setup Script" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JupyterTrust" id="a53148d2-922c-41d3-9f06-17c9f5cfd9f4" />
   <component name="ProjectId" id="1U76hgKTtNHAbuHkKNPtRJ4plq7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -254,6 +258,15 @@
       <workItem from="1579130372899" duration="616000" />
       <workItem from="1579296064621" duration="402000" />
       <workItem from="1579546605796" duration="1125000" />
+      <workItem from="1579573746760" duration="3116000" />
+      <workItem from="1579712687988" duration="6687000" />
+      <workItem from="1579725805196" duration="78000" />
+      <workItem from="1579797796072" duration="459000" />
+      <workItem from="1579809201826" duration="799000" />
+      <workItem from="1580133905033" duration="3077000" />
+      <workItem from="1580137989937" duration="2687000" />
+      <workItem from="1580225458217" duration="2324000" />
+      <workItem from="1580398146335" duration="3000" />
     </task>
     <task id="LOCAL-00002" summary="committing again">
       <created>1576015689787</created>
@@ -345,9 +358,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="320" y="107" key="#Notifications/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1576017249152" />
-    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576615220759">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="1898" y="239" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1579573934157">
+      <screen x="1440" y="35" width="1440" height="900" />
     </state>
+    <state x="1898" y="239" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/1440.35.1440.900@1440.35.1440.900" timestamp="1579573934157" />
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1576615220759" />
     <state x="314" y="44" width="812" height="795" key="CommitChangelistDialog2" timestamp="1576018223759">
       <screen x="0" y="23" width="1440" height="877" />
@@ -433,20 +447,21 @@
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state width="960" height="540" key="XDebugger.FullValuePopup/1440.0.1920.1080/0.0.1440.900@1440.0.1920.1080" timestamp="1576604909535" />
-    <state x="1771" y="194" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1578067770980">
+    <state x="1771" y="194" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1579721246631">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
     <state x="248" y="162" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.0.1440.900@0.0.1440.900" timestamp="1576190334867" />
-    <state x="1771" y="194" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/1440.0.1920.1080/0.0.1440.900@1440.0.1920.1080" timestamp="1578067770980" />
+    <state x="1771" y="194" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/1440.0.1920.1080/0.0.1440.900@1440.0.1920.1080" timestamp="1579721246631" />
     <state x="1771" y="194" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/1440.0.1920.1080/0.23.1440.877@1440.0.1920.1080" timestamp="1578065127842" />
-    <state x="1816" y="315" key="com.intellij.ide.util.TipDialog" timestamp="1579546606268">
+    <state x="1816" y="315" key="com.intellij.ide.util.TipDialog" timestamp="1581029191705">
       <screen x="1440" y="35" width="1440" height="900" />
     </state>
-    <state x="1816" y="315" key="com.intellij.ide.util.TipDialog/0.0.1440.900/1440.35.1440.900@1440.35.1440.900" timestamp="1579546606268" />
-    <state x="376" y="296" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1576535208995" />
-    <state x="1941" y="336" key="com.intellij.ide.util.TipDialog/1440.0.1920.1080/0.0.1440.900@1440.0.1920.1080" timestamp="1579296066602" />
+    <state x="1816" y="315" key="com.intellij.ide.util.TipDialog/0.0.1440.900/1440.35.1440.900@1440.35.1440.900" timestamp="1581029191705" />
+    <state x="376" y="296" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1580137998627" />
+    <state x="376" y="280" key="com.intellij.ide.util.TipDialog/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1580398146308" />
+    <state x="1941" y="336" key="com.intellij.ide.util.TipDialog/1440.0.1920.1080/0.0.1440.900@1440.0.1920.1080" timestamp="1580133905403" />
     <state x="376" y="296" key="com.intellij.ide.util.TipDialog/1440.23.1920.1057/0.23.1440.877@0.23.1440.877" timestamp="1576249283250" />
-    <state x="1941" y="352" key="com.intellij.ide.util.TipDialog/1440.23.1920.1057/0.23.1440.877@1440.23.1920.1057" timestamp="1578063311118" />
+    <state x="1941" y="352" key="com.intellij.ide.util.TipDialog/1440.23.1920.1057/0.23.1440.877@1440.23.1920.1057" timestamp="1579809204179" />
     <state x="2189" y="464" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576515508338">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
@@ -491,7 +506,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/FACS/distribute_master_mix.py</url>
-          <line>138</line>
+          <line>143</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>

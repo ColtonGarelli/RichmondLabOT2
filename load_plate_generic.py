@@ -53,8 +53,8 @@ def load_platemap(file_path):
 
 def distribute_mm_to_map(p50s: InstrumentContext, plates: [Labware],
                          tuberack: Labware, protocol: protocol_api.ProtocolContext,
-                         groups: typing.Generator, platemap: list):
-
+                         groups: typing.Generator, platemap: list, volume):
+    
     tubes = tuberack.wells()[:6]
     # next(groups)
     for i in range(len(plates)):
@@ -65,7 +65,6 @@ def distribute_mm_to_map(p50s: InstrumentContext, plates: [Labware],
             p50s.well_bottom_clearance.aspirate = 1
         for tube in tubes:
             current_group = next(groups)
-
             map_row_counter = 0
             p50s.pick_up_tip()
             for row in current_plate.rows():
@@ -73,9 +72,9 @@ def distribute_mm_to_map(p50s: InstrumentContext, plates: [Labware],
                 for i in range(12):
                     if map_row[i] == current_group and map_row[i] != '':
                         # p50s.well_bottom_clearance.aspirate = .2
-                        p50s.aspirate(volume=19, location=tube)
+                        p50s.aspirate(volume=volume, location=tube)
                         # p50s.well_bottom_clearance.dispense = 8
-                        p50s.dispense(volume=19, location=row[i])
+                        p50s.dispense(volume=volume, location=row[i])
                     else:
                         pass
                 map_row_counter += 1
@@ -91,4 +90,5 @@ def run(protocol:ProtocolContext):
     groups = get_groups(platemap)
 
     distribute_mm_to_map(p50s=p50s, plates=plates, tuberack=tuberack,
-                         platemap=platemap, groups=groups, protocol=protocol)
+                         platemap=platemap, groups=groups, protocol=protocol,
+                         volume=19)
