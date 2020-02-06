@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bde60989-0194-438a-ad6c-e677778040ed" name="Default Changelist" comment="committing again again">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ELISAs/blow_out.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ELISAs/test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FACS/distribute_master_mix.py" beforeDir="false" afterPath="$PROJECT_DIR$/FACS/distribute_master_mix.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FACS/master_mixing.py" beforeDir="false" afterPath="$PROJECT_DIR$/FACS/master_mixing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FACS/test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/example.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/example2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/load_plate_generic.py" beforeDir="false" afterPath="$PROJECT_DIR$/load_plate_generic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/load_platemap.py" beforeDir="false" afterPath="$PROJECT_DIR$/load_platemap.py" afterDir="false" />
-    </list>
+    <list default="true" id="bde60989-0194-438a-ad6c-e677778040ed" name="Default Changelist" comment="committing again again" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -267,7 +256,7 @@
       <workItem from="1580137989937" duration="2687000" />
       <workItem from="1580225458217" duration="2324000" />
       <workItem from="1580398146335" duration="3000" />
-      <workItem from="1581029190525" duration="386000" />
+      <workItem from="1581029190525" duration="657000" />
     </task>
     <task id="LOCAL-00002" summary="committing again">
       <created>1576015689787</created>
